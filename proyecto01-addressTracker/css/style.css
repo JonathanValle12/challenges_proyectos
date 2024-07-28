@@ -15,7 +15,7 @@ body {
 .cabecera {
     width: 100%;
     height: 250px;
-    background-image: url('./images/pattern-bg-desktop.png');
+    background-image: url('../images/pattern-bg-desktop.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -163,7 +163,7 @@ body {
         height: 400px;
     }
     .cabecera {
-        background-image: url('./images/pattern-bg-mobile.png');
+        background-image: url('../images/pattern-bg-mobile.png');
     }
     .cabecera .caja-result-address .results {
         flex-direction: column;
