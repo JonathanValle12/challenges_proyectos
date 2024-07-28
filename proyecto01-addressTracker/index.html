@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin="" />
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin="" defer></script>
+  <!-- Your script -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="cabecera">
+    <section class="ip-address-search">
+      <h2>IP Address Tracker</h2>
+      <div class="search">
+        <input type="search" id="search" name="search" placeholder="Search for any IP address or domain" />
+        <button id="filtrar-ip" class="icon-arrow"><img src="images/icon-arrow.svg" /></button>
+      </div>
+    </section>
+
+    <section class="caja-result-address">
+      <article class="results">
+        <div class="container-result">
+          <div class="container-ip">
+            <h3>Ip address</h3>
+            <p id="result-ip"></p>
+          </div>
+
+          <span class="separador">|</span>
+        </div>
+        <div class="container-result">
+          <div class="container-location">
+            <h3>location</h3>
+            <p id="result-location"></p>
+          </div>
+          <span class="separador">|</span>
+        </div>
+        <div class="container-result">
+          <div class="container-timezone">
+            <h3>Timezone</h3>
+            <p id="result-timezone"></p>
+          </div>
+
+          <span class="separador">|</span>
+        </div>
+        <div class="container-result">
+          <div class="container-isp">
+            <h3>Isp</h3>
+            <p id="result-isp"></p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </header>
+
+  <div id="map" class="map"></div>
+</body>
+
+</html>
